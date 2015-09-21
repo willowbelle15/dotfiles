@@ -1,0 +1,19 @@
+[user]
+	name = Willow Belle
+	email = willow.belle@icloud.com
+
+[credential]
+	helper = osxkeychain
+
+[push]
+  default = simple
+
+[alias]
+  status = status -sb
+  # make an alias for this maybe => git push origin --delete [ branch name ] => this deletes remote branches
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[hub]
+	protocol = https
