@@ -1,0 +1,4 @@
+shopt -s nocaseglob                     # Case-insensitive globbing (used in pathname expansion)
+
+bind '"\t":menu-complete'               # Bind the tab key to autocompletion options (cycling)
+bind "set completion-ignore-case on"    # Ignore case in bash completion
