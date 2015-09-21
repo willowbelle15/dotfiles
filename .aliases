@@ -1,0 +1,24 @@
+#General
+alias ls="ls -l"
+#alias ls='/bin/ls -lsaGF'
+alias flushcache='sudo killall -HUP mDNSResponder'
+
+#Remove Miscellaneous Crap
+alias rmdsstore='find . -name '*.DS_Store' -type f -delete'
+
+# Network Aliases
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias whois="whois -h whois-servers.net"
+alias flush="dscacheutil -flushcache"
+
+# Show/hide hidden files in Finder
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Lock the screen (when going AFK)
+alias leave="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
